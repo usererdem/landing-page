@@ -50,7 +50,7 @@ const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
   color: #353535;
   min-height: 90vh;
-  @media (max-width: 1500px) {
+  @media (max-width: 1300px) {
     padding: 2rem;
     font-size: 1rem;
   }
@@ -61,10 +61,10 @@ const Title = styled.div`
 `;
 const Circle = styled.div`
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+  width: 2rem;
+  height: 2rem;
   background: #353535;
-  @media (max-width: 1500px) {
+  @media (max-width: 1300px) {
     display: none;
   }
 `;
@@ -75,7 +75,7 @@ const Social = styled(motion.div)`
   h2 {
     margin: 2rem;
   }
-  @media (max-width: 1500px) {
+  @media (max-width: 1300px) {
     h2 {
       margin: 1rem 0rem;
       font-size: 2.5rem;
