@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import { fade } from "../animation";
 
 const Toggle = ({ children, title }) => {
   const [toggle, setToggle] = useState(false);
@@ -9,7 +8,7 @@ const Toggle = ({ children, title }) => {
   return (
     <StyledToggle layout onClick={() => setToggle(!toggle)}>
       <motion.h4 layout>{title}</motion.h4>
-      {toggle ? <motion.div variants={fade}>{children}</motion.div> : ""}
+      {toggle ? children : ""}
       <div className='faq-line'></div>
     </StyledToggle>
   );

@@ -60,3 +60,31 @@ export const sliderContainer = {
   hidden: { opacity: 1 },
   show: { opacity: 1, transition: { staggerChildren: 0.15, ease: "easeOut" } },
 };
+
+export const movieContainer = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+      ease: 'easeOut',
+      duration: 1,
+      when: 'beforeChildren',
+    },
+  },
+};
+
+export const reveal = {
+  hidden: { opacity: 0, scale: 0.9 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      type: 'tween',
+      ease: 'easeOut',
+      duration: 0.75,
+    },
+  },
+};

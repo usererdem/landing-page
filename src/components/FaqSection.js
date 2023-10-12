@@ -1,13 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 import { LayoutGroup } from "framer-motion";
+import { useScroll } from "./useScroll";
+import { reveal } from "../animation";
 
 import { Layout } from "../styles";
 import Toggle from "./Toggle";
 
 const FaqSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Faq className='faq'>
+    <Faq
+      transition={{ duration: 0.5 }}
+      ref={element}
+      animate={controls}
+      initial='hidden'
+      variants={reveal}
+      className='faq'>
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
