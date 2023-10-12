@@ -8,10 +8,19 @@ import home2 from "../img/home2.png";
 // Styles
 import { Layout, Description, Image } from "../styles";
 import styled from "styled-components";
+//Scroll animation
+import { reveal } from "../animation";
+import { useScroll } from "./useScroll";
 
 const ServicesSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Services>
+    <Services
+      transition={{ duration: 0.75 }}
+      ref={element}
+      variants={reveal}
+      animate={controls}
+      initial='hidden'>
       <Description>
         <h2>
           High <span>quality</span> services
@@ -77,7 +86,7 @@ const Card = styled.div`
   .icon {
     display: flex;
     align-items: center;
-    h3{
+    h3 {
       margin-left: 1rem;
       background: white;
       padding: 1rem;
