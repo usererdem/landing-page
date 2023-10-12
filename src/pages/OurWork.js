@@ -104,20 +104,20 @@ const Frame1 = styled(motion.div)`
   top: 10%;
   width: 100%;
   height: 100vh;
-  background: #fffebf;
+  background: #9B32BD;
   z-index: 2;
 `;
 
 const Frame2 = styled(Frame1)`
-  background: #ff8efb;
+  background: #EABDAE;
 `;
 
 const Frame3 = styled(Frame1)`
-  background: #8ed2ff;
+  background: #0A1E24;
 `;
 
 const Frame4 = styled(Frame1)`
-  background: #8effa0;
+  background: #48A12B;
 `;
 
 export default OurWork;
